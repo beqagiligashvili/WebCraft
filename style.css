@@ -238,6 +238,31 @@ text-align:center;
 border-top:1px solid #1e293b;
 color:#94a3b8;
 display: flex ;
+justify-content: center;
+    justify-content: space-around;
+}
+
+.contact_info {
+    display: grid;
+    align-items: center;
+    gap: 2vh;
+}
+
+.lic {
+    padding-top: 2.2vh;
+}
+
+.imgg {
+    width: 4vh;
+    height: 4vh;
+}
+
+
+
+.cnt {
+    display: flex;
+    align-items: center;
+    gap: 3vh;
 }
 
 @media(max-width:768px){
