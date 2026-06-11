@@ -26,25 +26,39 @@ backdrop-filter:blur(12px);
 z-index:1000;
 }
 
-nav{
+.header-flex {
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 0;
+padding:15px 0;
+}
+
+.logo-wrapper {
+display:flex;
+align-items:center;
+
+cursor:pointer;
+}
+
+.logophoto{
+width: 17vh;
+display:block;
+}
+
+.logo-text{
+font-size:22px;
+font-weight:800;
+color:white;
+white-space:nowrap;
+}
+
+nav{
+display:flex;
+align-items:center;
 }
 
 .navItems {
-    font-size: 16px;
-}
-
-.logo{
-font-size:22px;
-font-weight:800;
-cursor: pointer;
-
-}
-
-nav ul{
+font-size:16px;
 display:flex;
 gap:30px;
 list-style:none;
@@ -89,7 +103,6 @@ font-size:4rem;
 margin-bottom:20px;
 }
 
-
 .hero p{
 font-size:1.2rem;
 color:#cbd5e1;
@@ -128,7 +141,7 @@ padding:100px 0;
 text-align:center;
 font-size:2.5rem;
 margin-bottom:50px;
-margin-top: -17vh;
+margin-top:-17vh;
 }
 
 .cards{
@@ -229,7 +242,7 @@ cursor:pointer;
 }
 
 .imgg {
-    width: 5vh;
+width:5vh;
 }
 
 footer{
@@ -237,7 +250,9 @@ padding:40px;
 text-align:center;
 border-top:1px solid #1e293b;
 color:#94a3b8;
-display: flex ;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 @media(max-width:768px){
@@ -245,8 +260,15 @@ display: flex ;
 font-size:2.5rem;
 }
 
-nav ul{
+.navItems{
 display:none;
 }
+
+.logo-text{
+font-size:18px;
 }
 
+.logophoto{
+height:35px;
+}
+}
