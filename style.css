@@ -129,7 +129,13 @@ padding:100px 0;
 text-align:center;
 font-size:2.5rem;
 margin-bottom:50px;
-margin-top: -17vh;
+margin-top: -9vh;
+}
+
+
+
+.project {
+     border: 2.5px solid lightblue;
 }
 
 .cards{
