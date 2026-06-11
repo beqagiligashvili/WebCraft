@@ -67,6 +67,7 @@ align-items:center;
 justify-content:center;
 text-align:center;
 position:relative;
+overflow: hidden; /* რომ გვერდებზე გასული ტექსტი დაიმალოს */
 }
 
 .hero::before{
@@ -275,3 +276,63 @@ display:none;
 }
 }
 
+
+
+.hero-bg-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    z-index: 1; 
+    pointer-events: none; 
+    user-select: none;
+}
+
+.marquee-row {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 5rem; 
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    opacity: 0.03; 
+}
+
+.marquee-row span {
+    display: inline-block;
+    padding-right: 50px; 
+}
+
+.left-to-right span {
+    animation: marquee-left 30s linear infinite;
+}
+
+
+.right-to-left span {
+    animation: marquee-right 30s linear infinite;
+}
+
+@keyframes marquee-left {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+}
+
+@keyframes marquee-right {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+
+@media(max-width:768px){
+    .marquee-row {
+        font-size: 3rem;
+    }
+    .hero-bg-text {
+        gap: 20px;
+    }
+}
