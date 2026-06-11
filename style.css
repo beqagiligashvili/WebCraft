@@ -67,7 +67,7 @@ align-items:center;
 justify-content:center;
 text-align:center;
 position:relative;
-overflow: hidden; /* რომ გვერდებზე გასული ტექსტი დაიმალოს */
+overflow: hidden; 
 }
 
 .hero::before{
