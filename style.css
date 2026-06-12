@@ -26,39 +26,25 @@ backdrop-filter:blur(12px);
 z-index:1000;
 }
 
-.header-flex {
+nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 0;
-}
-
-.logo-wrapper {
-display:flex;
-align-items:center;
-
-cursor:pointer;
-}
-
-.logophoto{
-width: 17vh;
-display:block;
-}
-
-.logo-text{
-font-size:22px;
-font-weight:800;
-color:white;
-white-space:nowrap;
-}
-
-nav{
-display:flex;
-align-items:center;
+padding:20px 0;
 }
 
 .navItems {
-font-size:16px;
+    font-size: 16px;
+}
+
+.logo{
+font-size:22px;
+font-weight:800;
+cursor: pointer;
+
+}
+
+nav ul{
 display:flex;
 gap:30px;
 list-style:none;
@@ -104,6 +90,7 @@ font-size:4rem;
 margin-bottom:20px;
 }
 
+
 .hero p{
 font-size:1.2rem;
 color:#cbd5e1;
@@ -142,17 +129,7 @@ padding:100px 0;
 text-align:center;
 font-size:2.5rem;
 margin-bottom:50px;
-<<<<<<< HEAD
-margin-top:-17vh;
-=======
-margin-top: -9vh;
-}
-
-
-
-.project {
-     border: 2.5px solid lightblue;
->>>>>>> 37a5ee3f51b2b7c008818599c86e16fe7536524d
+margin-top: -17vh;
 }
 
 .cards{
@@ -252,7 +229,7 @@ cursor:pointer;
 }
 
 .imgg {
-width:5vh;
+    width: 5vh;
 }
 
 footer{
@@ -260,11 +237,6 @@ padding:40px;
 text-align:center;
 border-top:1px solid #1e293b;
 color:#94a3b8;
-<<<<<<< HEAD
-display:flex;
-justify-content:space-between;
-align-items:center;
-=======
 display: flex ;
 justify-content: center;
     justify-content: space-around;
@@ -291,7 +263,6 @@ justify-content: center;
     display: flex;
     align-items: center;
     gap: 3vh;
->>>>>>> 37a5ee3f51b2b7c008818599c86e16fe7536524d
 }
 
 @media(max-width:768px){
@@ -299,19 +270,11 @@ justify-content: center;
 font-size:2.5rem;
 }
 
-.navItems{
+nav ul{
 display:none;
 }
-
-.logo-text{
-font-size:18px;
 }
 
-<<<<<<< HEAD
-.logophoto{
-height:35px;
-}
-=======
 
 .hero-bg-text {
     position: absolute;
@@ -384,12 +347,13 @@ height:35px;
     z-index: 1;
 }
 
+
 .stat-card::before {
     content: '';
     position: absolute;
     inset: 0;
     border-radius: 20px;
-    padding: 2px; 
+    padding: 2px; /* ჩარჩოს სისქე */
     background: conic-gradient(
         from var(--gradient-angle),
         #38bdf8, 
@@ -416,13 +380,14 @@ height:35px;
         #8b5cf6, 
         #38bdf8
     );
-    filter: blur(15px); 
+    filter: blur(15px);
     opacity: 0.4; 
     animation: rotate-gradient 4s linear infinite;
 }
 
+
 .stat-content {
-    background: #0f172a;
+    background: #0f172a; 
     padding: 40px;
     border-radius: 19px;
     height: 100%;
@@ -437,5 +402,4 @@ height:35px;
     100% {
         --gradient-angle: 360deg;
     }
->>>>>>> 37a5ee3f51b2b7c008818599c86e16fe7536524d
 }
