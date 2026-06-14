@@ -339,12 +339,28 @@ display:none;
     initial-value: 0deg;
     inherits: false;
 }
+#contact {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
 
 .stat-card {
     position: relative;
     background: rgba(255, 255, 255, 0.03);
     overflow: hidden; 
     z-index: 1;
+}
+
+.prj {
+    width: 100%;
+    height: 100%;
+    border-radius: 3vh;
+}
+
+.phone_email {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: underline;
 }
 
 
