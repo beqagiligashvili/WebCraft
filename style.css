@@ -403,6 +403,25 @@ display:none;
     animation: rotate-gradient 4s linear infinite;
 }
 
+.prj {
+      background: conic-gradient(
+        from var(--gradient-angle),
+        #38bdf8, 
+        #8b5cf6, 
+        #38bdf8
+    );
+    border-radius: 20px;
+    padding: 1.5px;
+}
+
+.card {
+    border: 2px solid  #38bdf8;
+}
+
+.container {
+    margin-top: 5vh;
+}
+
 
 .stat-card::after {
     content: '';
